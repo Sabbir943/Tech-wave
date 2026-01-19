@@ -4,7 +4,6 @@
 .inter {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  
   font-style: normal;
 }
 .color{
@@ -13,3 +12,64 @@
 .white{
     color: white;
 }
+.hero-img{
+    background-image: url("assets/hero-circle.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    margin: 0 auto;
+    padding: 8rem;
+    position: relative;
+    /* animation: round 4s  1s infinite linear; */
+    
+}
+@keyframes round {
+  from{
+    transform: rotate(0deg);
+   
+  }
+  to{
+    transform: rotate(360deg);
+    
+  }
+}
+.hero-frist-back-img{
+    background-image: url("assets/hero-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    background-position-y:-40px ;
+   
+}
+
+.hero-button{
+  position:relative;
+  bottom:22rem;
+  left: 46rem;
+  color:black;
+  background-color: #00FF88;
+  border: 1px solid red;
+  padding: 8px 16px;
+  border-radius: 40px;
+  font-weight: bold;
+  border: none;
+}
+
+@media screen and (max-width:576px){
+  .hero-button{
+ 
+  bottom:22rem;
+  left: 22rem;
+  
+}
+
+}
+@media screen and (min-width:px) and (max-width:1024px){
+  .hero-button{
+ 
+  bottom:22rem;
+  left: 32rem;
+  
+}
+}
+
