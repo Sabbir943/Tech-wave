@@ -5,6 +5,7 @@
   font-optical-sizing: auto;
   font-style: normal;
 }
+
 .color {
   background-color: #1A0B2E;
 }
@@ -12,6 +13,7 @@
 .white {
   color: white;
 }
+
 .hero-frist-back-img {
   background-image: url("assets/hero-bg.png");
   background-repeat: no-repeat;
@@ -25,7 +27,7 @@
   margin-left: 260px;
   margin-bottom: 20px;
   padding: 8px 16px;
-  
+
 }
 
 .hero-section {
@@ -33,17 +35,28 @@
   background-repeat: no-repeat;
   background-position: center;
   padding: 120px;
-/* animation: round 4s  1s infinite linear; */
+  animation: round 4s 1s infinite linear;
 
 }
-/* .footer-content{
+
+.footer-content {
   /* bg-[url('/assets/footer-bg.png')]  bg-origin-content  bg-cover bg-center bg-no-repeat */
-  /*background-image: url('assets/footer-bg.png');
+  background-image: url('assets/footer-bg.png');
   background-position: center;
   background-repeat: no-repeat;
-  
-  
-} */
+  background-size: auto;
+
+
+}
+
+@media screen and (max-width:576px) {
+  .footer-content {
+    
+    background-size:contain;
+    }
+    
+}
+
 @keyframes round {
   from {
     transform: rotate(0deg);
@@ -55,6 +68,3 @@
 
   }
 }
-
-
-
